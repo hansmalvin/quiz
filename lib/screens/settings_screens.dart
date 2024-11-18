@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quiz/theme_provider.dart';
+import 'package:quiz/provider_test.dart';
  
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -25,7 +25,14 @@ class SettingsScreen extends StatelessWidget {
                 DropdownButton<String>(
                   value: themeProvider.themeName,
                   isExpanded: true,
-                  items: ['Tema A', 'Tema B', 'Tema C', 'Tema D', 'Tema E', 'Tema F']
+                  items: [
+                  'Tema 1', 
+                  'Tema 2', 
+                  'Tema 3', 
+                  'Tema 4', 
+                  'Tema 5', 
+                  'Tema 6',
+                  ]
                       .map((theme) => DropdownMenuItem(value: theme, child: Text(theme)))
                       .toList(),
                   onChanged: (value) => themeProvider.setTheme(value!),
@@ -39,8 +46,7 @@ class SettingsScreen extends StatelessWidget {
                   value: themeProvider.fontName,
                   isExpanded: true,
 
-                  
-                  items: ['Open Sans', 'Montserrat', 'Nunito', 'Poppins']
+                  items: ['font 1: Open Sans', 'Font 2: Montserrat', 'Font 3: Nunito', 'Font 4: Poppins']
                       .map((font) => DropdownMenuItem(value: font, child: Text(font)))
                       .toList(),
                   onChanged: (value) => themeProvider.setFont(value!),
