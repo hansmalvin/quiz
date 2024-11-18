@@ -32,10 +32,14 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 const Divider(),
+
+
                 Text('Select Font:', style: themeProvider.getTextStyle()),
                 DropdownButton<String>(
                   value: themeProvider.fontName,
                   isExpanded: true,
+
+                  
                   items: ['Open Sans', 'Montserrat', 'Nunito', 'Poppins']
                       .map((font) => DropdownMenuItem(value: font, child: Text(font)))
                       .toList(),

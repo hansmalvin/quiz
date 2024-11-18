@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
+
     final themeProvider = Provider.of<ThemeProvider>(context);
     return MaterialApp(
       theme: themeProvider.getTheme(),
@@ -26,13 +27,14 @@ class MyApp extends StatelessWidget {
 }
  
 class MainScreen extends StatelessWidget {
+
   const MainScreen({super.key});
  
   @override
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
-      appBar: AppBar(title: Text('Screen Wadidaw', style: themeProvider.getTextStyle())),
+      appBar: AppBar(title: Text('Screen testing', style: themeProvider.getTextStyle())),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -47,14 +49,14 @@ class MainScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Sekarang di ${themeProvider.themeName} \nMenggunakan font ${themeProvider.fontName}',
+                        'tes geser ${themeProvider.themeName} \nusing font ${themeProvider.fontName}',
                         style: themeProvider.getTextStyle(),
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 10),
                       const Divider(),
                       Text(
-                        'Ayo coba ubah tema dan font di Settings!',
+                        'test coba tema',
                         style: themeProvider.getTextStyle(),
                         textAlign: TextAlign.center,
                       ),
@@ -74,7 +76,7 @@ class MainScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (_) => const SettingsScreen()),
                   );
                 },
-                child: Text('Mari ubah di Settings', style: themeProvider.getTextStyle()),
+                child: Text('pengubahan di setting', style: themeProvider.getTextStyle()),
               ),
             ],
           ),
