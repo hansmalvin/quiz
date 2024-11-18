@@ -10,26 +10,26 @@ class ThemeProvider extends ChangeNotifier {
       case 'Tema B':
         return ThemeData(
             primarySwatch: Colors.brown,
-            scaffoldBackgroundColor: Colors.brown[50]);
+            scaffoldBackgroundColor: Colors.brown[500]);
       case 'Tema C':
         return ThemeData(
-            primarySwatch: Colors.grey,
-            scaffoldBackgroundColor: Colors.grey[50]);
+            primarySwatch: Colors.green,
+            scaffoldBackgroundColor: Colors.grey[500]);
       case 'Tema D':
         return ThemeData(
             primarySwatch: Colors.pink,
-            scaffoldBackgroundColor: Colors.pink[50]);
+            scaffoldBackgroundColor: Colors.pink[500]);
       case 'Tema E':
         return ThemeData(
-            primarySwatch: Colors.red, scaffoldBackgroundColor: Colors.red[50]);
+            primarySwatch: Colors.red, scaffoldBackgroundColor: Colors.red[500]);
       case 'Tema F':
         return ThemeData(
-            primarySwatch: Colors.yellow,
-            scaffoldBackgroundColor: Colors.yellow[50]);
+            primarySwatch: Colors.orange,
+            scaffoldBackgroundColor: Colors.yellow[500]);
       default:
         return ThemeData(
             primarySwatch: Colors.blue,
-            scaffoldBackgroundColor: Colors.blue[50]);
+            scaffoldBackgroundColor: Colors.blue[500]);
     }
   }
 
